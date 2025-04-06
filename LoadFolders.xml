@@ -1,0 +1,16 @@
+<loadFolders>
+  <v1.4>
+    <li>/</li>
+    <li IfModActive="OskarPotocki.VFE.Mechanoid">Mods and Shit/VFE Mechanoids</li>
+    <li IfModActive="vanillaracesexpanded.android">Mods and Shit/VRE Androids</li>
+    <li IfModActive="rhiom.conveyorbelts.1.02">Mods and Shit/Conveyor Belts</li>
+    <li IfModActive="sarg.alphamechs">Mods and Shit/Alpha Mechs</li>
+  </v1.4>
+  <v1.5>
+    <li>/</li>
+    <li IfModActive="OskarPotocki.VFE.Mechanoid">Mods and Shit/VFE Mechanoids</li>
+    <li IfModActive="vanillaracesexpanded.android">Mods and Shit/VRE Androids</li>
+    <li IfModActive="rhiom.conveyorbelts.1.02">Mods and Shit/Conveyor Belts</li>
+    <li IfModActive="sarg.alphamechs">Mods and Shit/Alpha Mechs</li>
+  </v1.5>
+</loadFolders>

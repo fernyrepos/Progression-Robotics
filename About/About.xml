@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Progression: Robotics</name>
+	<author>ferny</author>
+	<packageId>ferny.progressionrobotics</packageId>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>OskarPotocki.VFE.Mechanoid</packageId>
+			<displayName>Vanilla Factions Expanded - Mechanoids</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2329011599</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<description>Reintegrates the mechanoid technologies to better fit Biotech and vanilla Rimworld.</description>
+	<loadAfter>
+		<li>Ludeon.Rimworld</li>
+		<li>Ludeon.Rimworld.Royalty</li>
+		<li>Ludeon.Rimworld.Ideology</li>
+		<li>Ludeon.Rimworld.Biotech</li>
+		<li>OskarPotocki.VFE.Mechanoid</li>
+		<li>vanillaracesexpanded.android</li>
+		<li>rhiom.conveyorbelts.1.02</li>
+		<li>sarg.alphamechs</li>
+	</loadAfter>
+</ModMetaData>

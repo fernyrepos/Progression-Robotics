@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Alpha Mechs</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/RecipeDef[defName="AM_BlitzkriegRecipe"]/ingredients/li</xpath>
+        </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="AM_BlitzkriegRecipe"]/ingredients</xpath>
+            <value>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Steel</li>
+                  </thingDefs>
+                </filter>
+                <count>70</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>ComponentIndustrial</li>
+                  </thingDefs>
+              </filter>
+              <count>2</count>
+            </li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
