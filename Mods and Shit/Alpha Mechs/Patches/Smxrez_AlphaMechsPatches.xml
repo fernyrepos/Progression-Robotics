@@ -30,6 +30,78 @@
             </li>
           </value>
         </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="AM_WorkerStandardMechtech"]/baseCost</xpath>
+          <value>
+           <baseCost>500</baseCost>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="AM_StandardMechtech"]/baseCost</xpath>
+          <value>
+           <baseCost>1000</baseCost>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="AM_HeavyMechtech"]/baseCost</xpath>
+          <value>
+           <baseCost>1500</baseCost>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="AM_UltraHeavyMechtech"]/baseCost</xpath>
+          <value>
+           <baseCost>3000</baseCost>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="AM_AlphaHardwareUpgrade"]/baseCost</xpath>
+          <value>
+           <baseCost>2000</baseCost>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="AM_MechanoidBeamcasting"]/baseCost</xpath>
+          <value>
+           <baseCost>3000</baseCost>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="AM_VoidLinkConnectivity"]/baseCost</xpath>
+          <value>
+           <baseCost>4000</baseCost>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="AM_QuantumPulseMessaging"]/baseCost</xpath>
+          <value>
+           <baseCost>5000</baseCost>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="AM_Cryptoharmonization"]/baseCost</xpath>
+          <value>
+           <baseCost>6000</baseCost>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="AM_WorkerStandardMechtech"]</xpath>
+          <value>
+           <techLevel>Spacer</techLevel>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="AM_StandardMechtech"]</xpath>
+          <value>
+           <techLevel>Spacer</techLevel>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ResearchProjectDef[defName="AM_HeavyMechtech"]</xpath>
+          <value>
+           <techLevel>Spacer</techLevel>
+          </value>
+        </li>
       </operations>
     </match>
   </Operation>
