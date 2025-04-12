@@ -12,5 +12,6 @@
     <li IfModActive="vanillaracesexpanded.android">Mods and Shit/VRE Androids</li>
     <li IfModActive="rhiom.conveyorbelts.1.02">Mods and Shit/Conveyor Belts</li>
     <li IfModActive="sarg.alphamechs">Mods and Shit/Alpha Mechs</li>
+    <li IfModActive="scorpio.savetheassembler">1.5/LoadFolders/VEM Assembler and Prison Drones</li>
   </v1.5>
 </loadFolders>
