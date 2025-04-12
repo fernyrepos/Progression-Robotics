@@ -2,7 +2,7 @@
 <Patch>
   <Operation Class="PatchOperationFindMod">
     <mods>
-      <li>Alpha Mechs</li>
+      <li>Biotech</li>
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
@@ -29,6 +29,243 @@
               <count>2</count>
             </li>
           </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_DaggersnoutRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>BasicMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_BellicorRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>StandardMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_ArtilleronRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>StandardMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_BlitzkriegRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>BasicMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_Mech_MasterChefRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_Mech_TurboCleanerRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>StandardMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_AuraRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>StandardMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_LuxRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_PolychoronRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_OptioRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_MunifexRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_Mech_SagittariusRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_PristineStriderRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>StandardMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_PristineAssemblerRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>StandardMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_PristineSlurrypedeRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>StandardMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_DemolisherRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_GoliathRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_FirewormRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_PhalanxRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_SiegebreakerRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>AM_QuantumPulseMessaging</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_SiegemelterRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>AM_QuantumPulseMessaging</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_StarfireRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>AM_Cryptoharmonization</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_Mech_LegateRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>AM_VoidLinkConnectivity</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_InfernusRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>AM_VoidLinkConnectivity</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_WarEmpressRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>AM_QuantumPulseMessaging</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="AM_ApoptosisRecipe"]</xpath>
+          <value>
+            <researchPrerequisite>AM_Cryptoharmonization</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="AM_MechanoidBeamcasting"]/baseCost</xpath>
+          <value>
+           <baseCost>3000</baseCost>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="AM_VoidLinkConnectivity"]/baseCost</xpath>
+          <value>
+           <baseCost>4000</baseCost>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="AM_QuantumPulseMessaging"]/baseCost</xpath>
+          <value>
+           <baseCost>5000</baseCost>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="AM_Cryptoharmonization"]/baseCost</xpath>
+          <value>
+           <baseCost>6000</baseCost>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ResearchProjectDef[defName="AM_WorkerStandardMechtech"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ResearchProjectDef[defName="AM_StandardMechtech"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ResearchProjectDef[defName="AM_HeavyMechtech"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ResearchProjectDef[defName="AM_UltraHeavyMechtech"]</xpath>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="AM_DominionRecipe"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>VFE_HardwareUpgrade</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="AM_EvisceratorRecipe"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>VFE_HardwareUpgrade</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="AM_IncineratorRecipe"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>VFE_HardwareUpgrade</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="AM_ColossusRecipe"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>VFE_HardwareUpgrade</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="AM_HopliteRecipe"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>VFE_HardwareUpgrade</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="AM_SiegemasterRecipe"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>VFE_HardwareUpgrade</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="AM_PristineSlurrymasterRecipe"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>VFE_HardwareUpgrade</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ResearchProjectDef[defName="AM_AlphaHardwareUpgrade"]</xpath>
         </li>
       </operations>
     </match>
