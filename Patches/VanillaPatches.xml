@@ -40,19 +40,13 @@
     <li Class="PatchOperationReplace">
         <xpath>Defs/ResearchProjectDef[defName="StandardMechtech"]/baseCost</xpath>
         <value>
-            <baseCost>3000</baseCost>
+            <baseCost>2500</baseCost>
         </value>
     </li>
         <li Class="PatchOperationReplace">
         <xpath>Defs/ResearchProjectDef[defName="HighMechtech"]/baseCost</xpath>
         <value>
-            <baseCost>4500</baseCost>
-        </value>
-    </li>
-        <li Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="UltraMechtech"]/baseCost</xpath>
-        <value>
-            <baseCost>6000</baseCost>
+            <baseCost>3500</baseCost>
         </value>
     </li>
     <li Class="PatchOperationReplace">
