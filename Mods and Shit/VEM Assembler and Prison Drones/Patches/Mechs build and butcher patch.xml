@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Change assembler costs -->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_AssemblerBase"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>120</Steel>
+                <ComponentIndustrial>8</ComponentIndustrial>
+            </costList>
+        </value>
+	</Operation>
+	
+	<!-- Change CC drone costs -->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_CCBase"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>150</Steel>
+                <ComponentIndustrial>10</ComponentIndustrial>
+				<Plasteel>20</Plasteel>
+            </costList>
+        </value>
+	</Operation>
+	
+	<!-- Change Foodmaker costs -->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFEMA_Mechanoids_KitchenBase"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>120</Steel>
+                <ComponentIndustrial>8</ComponentIndustrial>
+            </costList>
+        </value>
+	</Operation>
+	
+	<!-- Change Grower costs -->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFEMA_Mechanoids_FarmerBase"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>150</Steel>
+                <ComponentIndustrial>8</ComponentIndustrial>
+            </costList>
+        </value>
+	</Operation>
+	
+	<!-- Change Brawler costs -->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_BrawlerBase"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>120</Steel>
+                <ComponentIndustrial>10</ComponentIndustrial>
+				<Plasteel>20</Plasteel>
+            </costList>
+        </value>
+	</Operation>
+	
+	<!-- Assemblers stats -->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_Assembler"]/statBases</xpath>
+            <value>
+		        <statBases>
+			        <MoveSpeed>1.4</MoveSpeed>
+		            <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+			        <ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+			        <ConstructSuccessChance>2</ConstructSuccessChance>
+					<PsychicSensitivity>0.25</PsychicSensitivity>
+		        </statBases>
+            </value>
+    </Operation>
+	
+	<!-- Foodmaker stats -->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFEMA_Mechanoids_Kitchen"]/statBases</xpath>
+            <value>
+		        <statBases>
+			        <MoveSpeed>1.4</MoveSpeed>
+		            <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+			        <ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+			        <PsychicSensitivity>0.25</PsychicSensitivity>
+		        </statBases>
+            </value>
+    </Operation>
+	
+	<!-- Grower stats -->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFEMA_Mechanoids_Farmer"]/statBases</xpath>
+            <value>
+		        <statBases>
+			        <MoveSpeed>1.4</MoveSpeed>
+		            <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+			        <ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+			        <PsychicSensitivity>0.25</PsychicSensitivity>
+		        </statBases>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_Assembler"]/butcherProducts</xpath>
+            <value>
+                <butcherProducts>
+                    <Steel>75</Steel>
+                </butcherProducts>
+            </value>
+	</Operation>
+	
+	<!-- Assembler consumption -->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_AssemblerBase"]/comps</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+                    <basePowerConsumption>50</basePowerConsumption>
+                </li>
+            <li Class="CompProperties_Flickable"/>
+	            <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+	        	    <pawnToSpawn>VFE_Mechanoids_Assembler</pawnToSpawn>
+		            <extraChargingPower>50</extraChargingPower>
+		            <hoursToRecharge>24</hoursToRecharge>
+	            </li>
+            </comps>
+        </value>
+	</Operation>
+	
+	<!-- Foodmaker consumption -->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFEMA_Mechanoids_KitchenBase"]/comps</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+                    <basePowerConsumption>50</basePowerConsumption>
+                </li>
+            <li Class="CompProperties_Flickable"/>
+	            <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+	        	    <pawnToSpawn>VFEMA_Mechanoids_Kitchen</pawnToSpawn>
+		            <skillLevel>6</skillLevel>
+					<extraChargingPower>50</extraChargingPower>
+		            <hoursToRecharge>24</hoursToRecharge>
+	            </li>
+            </comps>
+        </value>
+	</Operation>
+	
+	<!-- Grower consumption -->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFEMA_Mechanoids_FarmerBase"]/comps</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+                    <basePowerConsumption>50</basePowerConsumption>
+                </li>
+            <li Class="CompProperties_Flickable"/>
+	            <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+	        	    <pawnToSpawn>VFEMA_Mechanoids_Farmer</pawnToSpawn>
+		            <skillLevel>6</skillLevel>
+					<extraChargingPower>50</extraChargingPower>
+		            <hoursToRecharge>24</hoursToRecharge>
+	            </li>
+            </comps>
+        </value>
+	</Operation>
+	
+	<!-- Brawler consumption -->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_BrawlerBase"]/comps</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+                    <basePowerConsumption>50</basePowerConsumption>
+                </li>
+            <li Class="CompProperties_Flickable"/>
+	            <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+	        	    <pawnToSpawn>VFE_Mechanoids_Brawler</pawnToSpawn>
+		            <extraChargingPower>50</extraChargingPower>
+		            <hoursToRecharge>24</hoursToRecharge>
+	            </li>
+            </comps>
+        </value>
+	</Operation>
+	
+	<!-- CC drone consumption -->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_CCBase"]/comps</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Power">
+                    <compClass>CompPowerTrader</compClass>
+                    <basePowerConsumption>50</basePowerConsumption>
+                </li>
+            <li Class="CompProperties_Flickable"/>
+	            <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
+	        	    <pawnToSpawn>VFE_Mechanoids_CC</pawnToSpawn>
+		            <spawnWithWeapon>VFE_Gun_CCMechanoidGun</spawnWithWeapon>
+					<extraChargingPower>50</extraChargingPower>
+		            <hoursToRecharge>24</hoursToRecharge>
+	            </li>
+            </comps>
+        </value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFEMA_Mechanoids_Kitchen"]/butcherProducts</xpath>
+            <value>
+                <butcherProducts>
+                    <Steel>75</Steel>
+                </butcherProducts>
+            </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFEMA_Mechanoids_Farmer"]/butcherProducts</xpath>
+            <value>
+                <butcherProducts>
+                    <Steel>75</Steel>
+                </butcherProducts>
+            </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_CC"]/butcherProducts</xpath>
+            <value>
+                <butcherProducts>
+                    <Steel>85</Steel>
+                </butcherProducts>
+            </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_Brawler"]/butcherProducts</xpath>
+            <value>
+                <butcherProducts>
+                    <Steel>75</Steel>
+                </butcherProducts>
+            </value>
+	</Operation> 
+</Patch>
