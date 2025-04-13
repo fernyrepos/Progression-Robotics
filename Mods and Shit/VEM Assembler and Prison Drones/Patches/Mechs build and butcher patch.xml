@@ -96,15 +96,6 @@
 		        </statBases>
             </value>
     </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_Assembler"]/butcherProducts</xpath>
-            <value>
-                <butcherProducts>
-                    <Steel>75</Steel>
-                </butcherProducts>
-            </value>
-	</Operation>
 	
 	<!-- Assembler consumption -->
 	<Operation Class="PatchOperationReplace">
@@ -204,6 +195,17 @@
         </value>
 	</Operation>
 
+	<!-- Assembler shred yield -->
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_Assembler"]/butcherProducts</xpath>
+            <value>
+                <butcherProducts>
+                    <Steel>75</Steel>
+                </butcherProducts>
+            </value>
+	</Operation>
+	
+	<!-- Foodmaker shred yield -->
 	<Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="VFEMA_Mechanoids_Kitchen"]/butcherProducts</xpath>
             <value>
@@ -213,6 +215,7 @@
             </value>
 	</Operation>
 	
+	<!-- Grower shred yield -->
 	<Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="VFEMA_Mechanoids_Farmer"]/butcherProducts</xpath>
             <value>
@@ -222,6 +225,7 @@
             </value>
 	</Operation>
 	
+	<!-- CC drone shred yield -->
 	<Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="VFE_Mechanoids_CC"]/butcherProducts</xpath>
             <value>
@@ -231,6 +235,7 @@
             </value>
 	</Operation>
 	
+	<!-- Brawler shred yield -->
 	<Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="VFE_Mechanoids_Brawler"]/butcherProducts</xpath>
             <value>
@@ -239,4 +244,124 @@
                 </butcherProducts>
             </value>
 	</Operation> 
+
+    <!-- Rename assembler -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_Assembler"]/label</xpath>
+            <value>
+                <label>assembling workdrone</label>
+            </value>
+    </Operation>
+	
+	<!-- Rename assembler -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="VFE_Mechanoids_Assembler"]/label</xpath>
+            <value>
+                <label>assembling workdrone</label>
+            </value>
+    </Operation>
+	
+	<!-- Rename foodmaker -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFEMA_Mechanoids_Kitchen"]/label</xpath>
+            <value>
+                <label>cooking workdrone</label>
+            </value>
+    </Operation>
+	
+	<!-- Rename foodmaker -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="VFEMA_Mechanoids_Kitchen"]/label</xpath>
+            <value>
+                <label>cooking workdrone</label>
+            </value>
+    </Operation>
+	
+	<!-- Rename grower -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFEMA_Mechanoids_Farmer"]/label</xpath>
+            <value>
+                <label>farming workdrone</label>
+            </value>
+    </Operation>
+	
+	<!-- Rename grower -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="VFEMA_Mechanoids_Farmer"]/label</xpath>
+            <value>
+                <label>farming workdrone</label>
+            </value>
+    </Operation>
+	
+	<!-- Rename CC drone -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_CC"]/label</xpath>
+            <value>
+                <label>guard workdrone</label>
+            </value>
+    </Operation>
+	
+	<!-- Rename CC drone -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="VFE_Mechanoids_CC"]/label</xpath>
+            <value>
+                <label>guard workdrone</label>
+            </value>
+    </Operation>
+	
+	<!-- Rename brawler drone -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_Brawler"]/label</xpath>
+            <value>
+                <label>enforcer workdrone</label>
+            </value>
+    </Operation>
+	
+	<!-- Rename brawler drone -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="VFE_Mechanoids_Brawler"]/label</xpath>
+            <value>
+                <label>enforcer workdrone</label>
+            </value>
+    </Operation>
+	
+	<!-- Rename assembler drone base -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_AssemblerBase"]/label</xpath>
+            <value>
+                <label>assembling workdrone station</label>
+            </value>
+    </Operation>
+	
+	<!-- Rename foodmaker drone base -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFEMA_Mechanoids_KitchenBase"]/label</xpath>
+            <value>
+                <label>cooking workdrone station</label>
+            </value>
+    </Operation>
+	
+	<!-- Rename brawler drone -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFEMA_Mechanoids_FarmerBase"]/label</xpath>
+            <value>
+                <label>farming workdrone station</label>
+            </value>
+    </Operation>
+	
+	<!-- Rename brawler drone -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_CCBase"]/label</xpath>
+            <value>
+                <label>guard workdrone station</label>
+            </value>
+    </Operation>
+	
+	<!-- Rename brawler drone -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VFE_Mechanoids_BrawlerBase"]/label</xpath>
+            <value>
+                <label>enforcer workdrone station</label>
+            </value>
+    </Operation>
 </Patch>
