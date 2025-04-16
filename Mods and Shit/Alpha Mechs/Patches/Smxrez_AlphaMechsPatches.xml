@@ -187,7 +187,7 @@
           </value>
         </li>
         <li Class="PatchOperationAdd" MayRequire="vanillaracesexpanded.sanguophage">
-          <xpath>Defs/RecipeDef[defName="AM_Gestate_Sanguinarius"]/researchPrerequisite</xpath>
+          <xpath>Defs/RecipeDef[defName="AM_Gestate_Sanguinarius"]</xpath>
           <value>
             <researchPrerequisite>HighMechtech</researchPrerequisite>
           </value>
