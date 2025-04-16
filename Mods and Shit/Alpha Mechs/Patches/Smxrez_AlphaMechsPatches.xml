@@ -186,6 +186,42 @@
             <researchPrerequisite>AM_Cryptoharmonization</researchPrerequisite>
           </value>
         </li>
+        <li Class="PatchOperationAdd" MayRequire="vanillaracesexpanded.sanguophage">
+          <xpath>Defs/RecipeDef[defName="AM_Gestate_Sanguinarius"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vgeneticse">
+          <xpath>Defs/RecipeDef[defName="AM_Gestate_Geneticor"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vcef">
+          <xpath>Defs/RecipeDef[defName="AM_Gestate_Angler"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vbookse">
+          <xpath>Defs/RecipeDef[defName="AM_Gestate_Librarian"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace" MayRequire="sarg.rimbees">
+          <xpath>Defs/RecipeDef[defName="AM_Gestate_Apiarist"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>BasicMechtech</researchPrerequisite>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace" MayRequire="Dubwise.Rimatomics">
+          <xpath>Defs/RecipeDef[defName="AM_Gestate_Nucleotron"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>BasicMechtech</researchPrerequisite>
+          </value>
+        </li>
         <li Class="PatchOperationReplace">
           <xpath>Defs/ResearchProjectDef[defName="AM_MechanoidBeamcasting"]/baseCost</xpath>
           <value>
