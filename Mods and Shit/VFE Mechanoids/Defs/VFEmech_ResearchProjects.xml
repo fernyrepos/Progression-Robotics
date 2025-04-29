@@ -7,6 +7,10 @@
 		<baseCost>1700</baseCost>
 		<tab>VanillaExpanded</tab>
 		<techLevel>Industrial</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
 		<prerequisites>
 			<li>Machining</li>
 		</prerequisites>
